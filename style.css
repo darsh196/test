@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.game-container {
+    margin: 50px auto;
+    width: 300px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    position: relative;
+}
+.cell {
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cell.used {
+    cursor: not-allowed;
+    color: #bbb;
+}
+.cell.winning {
+    background-color: #cff4d7;
+    text-decoration: line-through;
+    color: #28a745;
+}
+#player-choice {
+    margin-bottom: 20px;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ddd;
+}
+#winner {
+    font-weight: bold;
+    color: #d9534f;
+}
